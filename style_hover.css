@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,900;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Source Code Pro', monospace;
+}
+ body{
+    background: linear-gradient(80deg, #b3da9d69, #13ff3a49), url(img/paisaje.jpg) ;
+    
+ }
+ /* .wave{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+} */
+
+
+h2, p{
+    text-align: center;
+    margin: 10px;
+    
+}
+p{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-style: oblique;
+    color:  blue ;
+   
+}
+
+h2{
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    
+   
+    
+}
+
+.box{
+    
+    width: 250px;
+    margin: 1em 30px;
+    padding-top: 3em;
+    box-shadow: 0 0 0 0 rgba(18, 117, 231, 0.911);
+    /* transition: 1s; */
+    opacity: .3;
+    transition: opacity 2s;
+    
+    
+}
+
+img{
+    
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    clip-path:circle();
+    
+    
+}
+
+.box:hover{
+    transform: scale(2.2);
+    z-index: 1;
+    box-shadow: 0px 30px 200px 2px rgba(172, 204, 27, 0.5);
+    cursor: pointer;
+    opacity: 1;
+    
+
+}
